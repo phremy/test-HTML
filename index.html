@@ -4,75 +4,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- titre de la page -->
+  <!-- Titre de la page -->
   <title>Délices Gourmands - Menu</title>
-  <!-- Icone de l'onglet -->
-   <link rel="shortcut icon" href="./logo-no-background.avif">
+  <!-- Icône de l'onglet -->
+  <link rel="shortcut icon" href="./logo-no-background.avif">
+  <!-- Feuille de style CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <h1>Menu de Délices Gourmands</h1>
+  <!-- En-tête de la page -->
+  <header>
+    <img src="./logo-no-background.avif" alt="Logo Délices Gourmands" class="logo">
+    <h1 class="hidden">Délices Gourmands</h1>
 
-  <h2><strong>Entrées</strong></h2>
-  <!-- Image du menu entrées -->
-  <ul>
-    <li>
-    <section>  
-      <strong>Salade César</strong>
-      <p>Feuilles de laitue romaine, croûtons dorés, parmesan et sauce César maison.</p>
-      <img src="./images.jpg" height="190" alt="image salade césar">
-    </li>
-    <li>
-      <strong>Bruschetta</strong>
-      <p>Tranches de pain grillé garnies de tomates fraîches, basilic et huile d’olive.</p>
-      <img src="./images (1).jpg" height="190" alt="image bruschetta">
-    </li>
-    <li>
-      <strong>Soupe du jour</strong>
-      <p>Une soupe chaude préparée quotidiennement avec des ingrédients frais de saison.</p>
-      <img src="./téléchargement.jpg" height="190" alt="Image soupe du jour">
-    </li>
-  </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#entrees">Entrées</a></li>
+        <li><a href="#plats">Plats</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <h1><p>Menu de Délices Gourmands</p></h1> 
+  <p>Découvrez notre sélection de plats savoureux, préparés avec des ingrédients frais et de saison.</p>
+  <p>Nous vous proposons une variété d'entrées, de plats principaux et de desserts pour satisfaire toutes vos envies.</p>
+  <p>Nous espérons que vous trouverez votre bonheur parmi notre menu !</p>
+  <h2><strong>Nos Spécialités</h2></strong><!-- Ajout d'un sous-titre pour les spécialités -->
+  <p>Ne manquez pas de goûter à nos plats du jour, préparés avec soin par notre chef.</p>
+  
+  <section id="entrees" class="menu-section">
+
+    <h2><strong>Entrées</strong></h2>
+    <ul>
+      <li>
+        <strong>Salade César</strong>
+        <p>Feuilles de laitue romaine, croûtons dorés, parmesan et sauce César maison.</p>
+        <img src="./images.jpg" height="190" alt="Image salade César">
+      </li>
+      <li>
+        <strong>Bruschetta</strong>
+        <p>Tranches de pain grillé garnies de tomates fraîches, basilic et huile d’olive.</p>
+        <img src="./images (1).jpg" height="190" alt="Image bruschetta">
+      </li>
+      <li>
+        <strong>Soupe du jour</strong>
+        <p>Une soupe chaude préparée quotidiennement avec des ingrédients frais de saison.</p>
+        <img src="./téléchargement.jpg" height="190" alt="Image soupe du jour">
+      </li>
+    </ul>
+
   </section>
-  <section>
-  <h2>Plats principaux</h2>
-  <ul>
-    <li>
-      <strong>Poulet rôti aux herbes</strong>
-      <p>Filet de poulet mariné et rôti, servi avec des légumes grillés et une sauce au thym.</p>
-      <img src="./téléchargement (1).jpg" height="190" alt="Image de poulet roti aus herbes">
-    </li>
-    <li>
-      <strong>Tagliatelles au saumon</strong>
-      <p>Pâtes fraîches accompagnées de saumon fumé et d’une sauce crémeuse à l’aneth.</p>
-      <img src="./téléchargement (2).jpg" height="190" alt="Tagliattelles au saumon">
-    </li>
-    <li>
-      <strong>Risotto aux champignons</strong>
-      <p>Riz arborio cuit lentement avec des champignons sauvages et du parmesan fondant.</p>
-      <img src="./téléchargement (3).jpg" height="190" alt="Risotto aux champignons">
-    </li>
-  </ul>
 
-  <h2>Desserts</h2>
-  <ul>
-    <li>
-      <strong>Tarte au citron meringuée</strong>
-      <p>Pâte sablée garnie d’une crème citronnée et surmontée d’une meringue dorée.</p>
-      <img src="./téléchargement (4).jpg" height="190" alt="Tarte au citron meringuée">
-    </li>
-    <li>
-      <strong>Mousse au chocolat</strong>
-      <p>Délicieuse mousse légère au chocolat noir, servie avec copeaux de chocolat.</p>
-      <img src="./téléchargement (5).jpg" height="190" alt="Mousse au chocolat">
-    </li>
-    <li>
-      <strong>Crème brûlée</strong>
-      <p>Crème onctueuse à la vanille avec une fine couche de sucre caramélisé.</p>
-      <img src="./téléchargement (6).jpg" height="190" alt="Crème brulée">
-    </li>
-   </section>
-  </ul>
+  <section id="plats principaux" class="menu-section">
+
+    <h2><strong>Plats principaux</strong></h2>
+    <ul>
+      <li>
+        <strong>Poulet rôti aux herbes</strong>
+        <p>Filet de poulet mariné et rôti, servi avec des légumes grillés et une sauce au thym.</p>
+        <img src="./téléchargement (1).jpg" height="190" alt="Image poulet rôti aux herbes">
+      </li>
+      <li>
+        <strong>Tagliatelles au saumon</strong>
+        <p>Pâtes fraîches accompagnées de saumon fumé et d’une sauce crémeuse à l’aneth.</p>
+        <img src="./téléchargement (2).jpg" height="190" alt="Tagliatelles au saumon">
+      </li>
+      <li>
+        <strong>Risotto aux champignons</strong>
+        <p>Riz arborio cuit lentement avec des champignons sauvages et du parmesan fondant.</p>
+        <img src="./téléchargement (3).jpg" height="190" alt="Risotto aux champignons">
+      </li>
+    </ul>
+
+  </section>
+
+  <section id="desserts" class="menu-section">
+
+    <h2><strong>Desserts</strong></h2>
+    <ul>
+      <li>
+        <strong>Tarte au citron meringuée</strong>
+        <p>Pâte sablée garnie d’une crème citronnée et surmontée d’une meringue dorée.</p>
+        <img src="./téléchargement (4).jpg" height="190" alt="Tarte au citron meringuée">
+      </li>
+      <li>
+        <strong>Mousse au chocolat</strong>
+        <p>Délicieuse mousse légère au chocolat noir, servie avec copeaux de chocolat.</p>
+        <img src="./téléchargement (5).jpg" height="190" alt="Mousse au chocolat">
+      </li>
+      <li>
+        <strong>Crème brûlée</strong>
+        <p>Crème onctueuse à la vanille avec une fine couche de sucre caramélisé.</p>
+        <img src="./téléchargement (6).jpg" height="190" alt="Crème brûlée">
+      </li>
+    </ul>
+
+  </section>
 
   <p><a href="contact.html">Contactez-nous pour réserver une table</a></p>
 

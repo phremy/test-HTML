@@ -1,0 +1,155 @@
+/* Importer la police Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Style général */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #ffd1b3 0%, #ffb3b3 100%);
+  color: #333;  /* couleur du texte */
+}
+
+/* Style du header */
+header {
+  background: linear-gradient(135deg, #ff9966, #ff5e62); /* joli dégradé orange/rose */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+h1.hidden  {
+  text-decoration: underline; /* souligné */
+  text-decoration-color: #d35a2a; /* couleur de la ligne de soulignement */
+  font-style: italic; /* style de police italique */
+  font-weight: bold; /* texte en gras */
+  color: white; /* couleur du texte */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* ombre pour le texte */
+  margin: 0; /* pas de marge */
+  font-size: 1.5rem; /* taille de la police */
+  letter-spacing: normal;
+}
+
+/* NAVBAR Sticky */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* reste au-dessus de tout */
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  width: 50px; /* logo petit */
+  height: auto;
+}
+
+/* Nom à côté du logo */
+header h1 {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+
+/* Navigation */
+nav {
+  margin-left: auto; /* pousse le menu à droite */
+}
+
+h1 {
+  text-transform: uppercase; /* met le texte en majuscules */
+  letter-spacing: 3px; /* espace entre les lettres */
+  text-align: center; /* centre le texte */
+  font-size: 2.5rem; /* taille de la police */
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.3); /* ombre pour le texte */
+  color: #ff5e62; /* couleur du texte */
+}
+
+h2 {
+  text-align: center; /* centre le texte */
+  color: #ff5e62; /* couleur du texte */
+  font-size: 2rem; /* taille de la police */
+  margin-top: 20px; /* espace au-dessus */
+}
+
+h2  {
+  background-color: #ffe0cc; /* Beige orangé pastel */
+  color: #333; /* Texte gris foncé pour le contraste */
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 20px auto;
+  font-size: 28px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s; /* transition pour l'effet de survol */
+}
+
+h2:hover {
+  background-color: #ffd1b3; /* Change légèrement au survol */
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s; /* transition pour le changement de couleur */
+}
+
+nav ul li a:hover {
+  color: #333; /* couleur au survol des liens */
+}
+
+.menu-section {
+  background-color: #f9f9f9;
+  margin: 40px 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Images */
+ul li img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+ul li img:hover {
+  transform: scale(1.05);
+}
+
+/* Lien Contact */
+p a {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  background-color: #ff5e62;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+p a:hover {
+  background-color: #e14b4f;
+}
